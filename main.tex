@@ -1,0 +1,209 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{enumitem}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Henrik}{Heinonen}{Curriculum Vitae}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.27}[0.73]
+\begin{paracol}{2}
+    \hbadness5000
+    %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+    
+    \paracolbackgroundoptions
+    
+    % 0.9,0.9,0.9 -- 0.8,0.8,0.8
+    
+    
+    \footnotesize
+    {\setasidefontcolour
+    %\flushright
+\begin{center}
+    \roundpic{me.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+Henrik Heinonen
+
+nationality: Finnish 
+
+date of birth: \textbf{HIDDEN}
+}
+\bigskip
+
+\bg{cvgreen}{white}{Social}\\[0.5em]
+\begin{tabular}{r  l}
+    \faHome & \href{https://heinohen.github.io/portf/}{portfolio}\\
+    \faAt & heinohen@utu.fi\\
+    \faLinkedin & \href{www.linkedin.com/in/heinohen}{heinohen}\\
+    \faGithub & \href{https://github.com/heinohen}{heinohen}\\
+   \end{tabular}
+   
+\bigskip
+\bg{cvgreen}{white}{Languages} \\[0.5em]
+\begin{tabular}{l | l }
+\textbf{Finnish}  & \pictofraction{\faSquare}{cvgreen}{4}{cvgreen}{1}{\small}\\
+\textbf{English}  & \pictofraction{\faSquare}{cvgreen}{4}{black!30}{1}{\small}\\
+\textbf{Swedish}  & \pictofraction{\faSquare}{cvgreen}{2}{black!30}{3}{\small}\\
+\end{tabular}
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Skills}\\[0.5em]
+
+
+\begin{tabular}{l | l}
+    \textbf{Python}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \textbf{Java}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \textbf{R}  & \pictofraction{\faSquare}{cvgreen}{2}{black!30}{3}{\small} \\
+    \textbf{Javascript}  & \pictofraction{\faSquare}{cvgreen}{2}{black!30}{3}{\small} \\
+    \textbf{Typescript}  & \pictofraction{\faSquare}{cvgreen}{2}{black!30}{3}{\small} \\
+    \textbf{React}  & \pictofraction{\faSquare}{cvgreen}{2}{black!30}{3}{\small} \\
+    \textbf{SQL}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \LaTeX& \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \\
+    \textbf{Relational DB}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \textbf{Unix}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \textbf{MacOS}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \\
+    \textbf{Team lead}  & \pictofraction{\faSquare}{cvgreen}{4}{black!30}{1}{\small} \\
+    \textbf{Leadership}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+    \textbf{Management}  & \pictofraction{\faSquare}{cvgreen}{3}{black!30}{2}{\small} \\
+\end{tabular}
+\bigskip
+\vspace{1em}
+
+\bigskip
+\vspace{1em}
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+\begin{tabular}{r  l}
+    & Data-Analysis\\
+    & Machine Learning\\
+    & NLP\\
+    & Software Engineering\\
+\end{tabular}
+\bigskip
+
+\bigskip
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+\begin{tabular}{r  l}
+    & Networking through TurkuDev\\
+    & Sports\\
+    & Outdoors\\
+\end{tabular}
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Work experience}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{4/2021--}{Shift Lead}{Neste Oyj}{Naantali \color{cvred}}{Current title Shift lead is extended from the responsibilities of the Loading master to include whole tank farm and truck logistics during shift}{white.png} \\
+    \cvevent{2/2016--4/2021}{Loading Master}{Neste Oyj}{Naantali \color{cvred}}{Acted as lead for team in role, responsibilities included fulfilling outside and inside clients’ needs in the field of harbor logistics. Responsibilities in safety and operations.}{white.png}\\
+    \cvevent{2/2010--1/2016}{Logistics Operator}{Neste Oyj}{Naantali \color{cvred}}{Acted as part of a team that was responsible of distribution of produces by ships and trucks ensuring quality and distribution.}{white.png}\\
+    \cvevent{2/2005--2/2010}{Operator}{Neste Oyj}{Naantali \color{cvred}}{Acted as part of a team that was responsible of manufacturing of produces, ensuring quality and distribution for logistics.}{white.png}
+\end{tabular}
+
+
+\section*{Education}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2024--}{Master of Science (in progress)}{Computer Science}{University of Turku,Finland \color{cvred}}{}{white.png} \\
+    \cvevent{2022--2024}{Bachelor of Science}{Computer Science}{University of Turku,Finland \color{cvred}}{Minors: Math, Statistics, Digital language studies}{white.png} \\
+\end{tabular}
+%\vspace{3em}
+
+
+\section*{Research output}    
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    Bachelor's thesis & Heinonen, Henrik (2024). ICD-koodien automaattinen määritys luonnollisen kielen käsittelyn menetelmillä. Kandidaatin tutkielma, tietojenkäsittelytiede, Turun yliopisto, Teknillinen tiedekunta. (Instructor: Filip Ginter) \href{https://urn.fi/URN:NBN:fi-fe2024060646337}{https://urn.fi/URN:NBN:fi-fe2024060646337} \\
+\end{tabular}
+
+\section*{Awards \& Honors}    
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    Spring, 2024 & Scholarship for academic achievement, TOT-foundation, Turku \\
+    Fall, 2024 & Scholarship for academic achievement, Department of Computing, UTU, Turku \\
+\end{tabular}
+
+
+\section*{References}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    \textbf{HIDDEN} & \textbf{HIDDEN} \\
+    & \textbf{HIDDEN}\\
+    & \textbf{HIDDEN}\\
+    \textbf{HIDDEN} & \textbf{HIDDEN} \\
+    & \textbf{HIDDEN}\\
+    & \textbf{HIDDEN}
+\end{tabular}
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Henrik Heinonen \icon{\faEnvelopeO}{cvgreen}{} \textbf{HIDDEN} \icon{\faMapMarker}{cvgreen}{} \icon{\faPhone}{cvgreen}{} \textbf{HIDDEN} \newline\icon{\faAt}{cvgreen}{} hohein@utu.fi
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
