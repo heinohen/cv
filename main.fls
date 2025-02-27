@@ -1054,11 +1054,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Bold-tlf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Bold-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-t1.tfm
-INPUT ./me.jpg
-INPUT ./me.jpg
-INPUT me.jpg
-INPUT ./me.jpg
-INPUT ./me.jpg
+INPUT ./white.png
+INPUT ./white.png
+INPUT white.png
+INPUT ./white.png
+INPUT ./white.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Bold-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -1092,7 +1092,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fo
 INPUT ./white.png
 INPUT ./white.png
 INPUT white.png
-INPUT ./white.png
 INPUT ./white.png
 INPUT ./white.png
 INPUT ./white.png
